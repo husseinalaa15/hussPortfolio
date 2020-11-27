@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Order </title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color: #ededed;">
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="home.php"><img src="t.png" width="40px;"></a>
+
+  <!-- Links --> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+
+      <a class="nav-link" href="login.php">Log in </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="signup.php">Sign Up</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        More
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="order.php">Order</a>
+        <a class="dropdown-item" href="#">Info</a>
+        <a class="dropdown-item" href="#">Contact Us</a>
+      </div>
+
+    </li>
+  </ul>
+</div>
+</nav>
+<br>
+
+
+
+<div class="container snan pt-5 my-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-6 text-center ">
+    <IMG style="width:450px; " src="teeth.jpg">
+    <br>
+    <br>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-6  text-center">
+    <h1> Choose The Tooth </h1>
+  <select class="sa">
+    <option value="0">Select Quadrant:</option>
+    <option value="1">Upper Right</option>
+    <option value="2">Upper Left</option>
+    <option value="3">Lower Right</option>
+    <option value="4">Lower Left</option>
+  </select>
+   <input class="text-center txt" type="textarea" placeholder="Write number ">
+   <br>
+   <br>
+   <h2> Select color </h2>
+
+   <input class="text-center txt " type="textarea" placeholder="Shade 1 ">
+   <input class="text-center txt" type="textarea" placeholder="Shade 2 ">
+   <br>
+   <br>
+   <table class="table table-warning ">
+  <thead>
+    <tr>
+      <th scope="col">Zircone<br> <span class="text-danger">15$</span></th>
+      <th scope="col">Crown <br> <span class="text-danger">10$</span></th>
+      <th scope="col">Porcline <br> <span class="text-danger">30$</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox">Monolothic </td>
+      <td><input type="checkbox">Undocrown</td>
+      <td><input type="checkbox">Classic</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" >Cut back </td>
+      <td><input type="checkbox">Onlay</td>
+      <td><input type="checkbox">Inlay</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">Core</td>
+      <td><input type="checkbox">Veneer</td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class=" col-sm-12 col-md-12 col-lg-12 ">
+    <button type="Submit" class="btn  btnt"> Submit </button>
+  </div>
+</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-white text-center py-3">© 2020 Copyright:
+    <a href="https://www.facebook.com/hussein.alaa.1272"> Hussein</a><Br>
+    <a href="">hussein.alaa12199@gmail.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
+<!---
+<div class="" style="width:200px;">
+  <select class="sa">
+    <option value="0">Select Number:</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+   
+  </select>
+</div>

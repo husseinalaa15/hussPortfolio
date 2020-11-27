@@ -1,0 +1,287 @@
+/*
+ body{
+	background-color: #f9fcfb;
+	background-image: url(flower.png) ;
+	animation: flower 75s linear infinite;
+
+
+
+}
+@keyframes flower{
+	0%{background-position: 0 0 ;}
+	100%{
+		background-position: -2122px 0;
+	}
+}
+*/
+
+
+@media (max-width: @screen-xs-min) {
+  .modal-xs { width: @modal-sm; }
+}
+
+
+
+.welcome {
+font-family: 'Alex Brush', cursive;
+size: 112px;
+color:#cebd88;
+text-align: center;
+
+}
+/*color:#868485;*/
+.hotel{
+	background-color:beige;
+
+
+
+
+
+}
+
+
+.card-title{
+	font-weight: bold;
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	bottom: 20%;
+	margin-left: 5%;
+	font-family: sans-serif;	
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    font-family: 'Alex Brush', cursive;
+text-shadow: 2px -1px 18px rgba(0,0,0,1);
+
+
+}
+
+.price{
+	color: #f8615a;
+}
+
+
+th{
+	font-size: 15px;
+}
+
+.pre , .nxt{
+	background-color: rgba(80,80,80,.4);
+	width: 5%;
+	
+
+}
+
+
+
+/*INOUTS GROOMS AND BRIDE*/
+.number {
+ font-size: 15px;
+ border-radius: 5px;
+}
+.more{
+	font-size: 20px;
+}
+
+
+.confirm{
+	background-color:#866719;
+	padding: 2px;
+	cursor: pointer;	
+	color: white;
+
+
+}
+.confirm:hover{
+	background-color:black;
+		
+
+}
+
+
+
+
+th { font-family: 'FontAwesome', 'open sans-serif' }
+
+.price{
+	color: red;
+		font-size: 15px;
+
+}
+.inc{
+	color: green;
+	font-size: 15px;
+}
+.CD{
+	background-color: #f1f9f9;
+}
+.detp{
+font-size: 15px;
+font-weight: 600;
+padding-top: 50px;
+
+
+
+
+}
+footer{
+	font-size: 13px;
+}
+/* INPUT BRIDES AND GROOMS NAMES */
+.detin {
+	width: 100%;
+ 	text-align: center;
+ 	border-radius: 20px;
+ 	border:none; 
+ 	background: #eae9e9;
+ 	text-decoration: none;
+ 	outline: none;
+
+
+}
+.RV{
+	background-color: #f1f9f9;
+}
+
+
+
+
+.card-img-overlay{
+	opacity: 0;
+	margin-top:350px;
+    left:0;
+	padding-top: 10px;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+
+}
+
+.card{
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 90%;
+}
+.card:hover {
+	margin-top: -10px;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.card:hover img{
+		filter: blur(2px);
+
+}
+.card:hover .title{
+	margin-bottom: 50px;
+
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.card:hover .title2{
+	margin-bottom: 50px;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.card-text{
+	margin-bottom: -5px;
+	font-weight: bold;
+	color:#d9bf77;
+	font-size:15px;
+	margin-left: 30%;
+	position: absolute;
+	bottom: 10%;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+	text-shadow: 0px 0px 25px rgba(220,220,220,1);
+    font-family: 'FontAwesome', 'open sans-serif' ;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.card:hover .card-text{
+	margin-bottom: 35px;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+	}
+ 
+.card .content{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 15%;
+	overflow: hidden;
+	background: RGBA(0,0,0,0.6);
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.card:hover .content{
+	width: 100%;
+	height: 30%;
+	left: 0;
+	bottom: 0;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+ .card:hover .card-img-overlay
+
+
+
+{
+	opacity:1;
+	/*background: rgba(0, 117, 156, 0.5);*/
+	border-radius: 20px;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    margin-top:350px;
+	padding-top: 10px;
+
+
+
+
+
+
+}
+.card-img-overlay{
+	font-size: 100%;
+
+
+}
+.card-img-overlay a{
+	background:#866719;
+	color:white;
+}
+.card-img-overlay a:hover{
+	background:#9c5518;
+	color:white;
+}
+/* bta3t l close l mogdoe fdafe*/
+.close{	
+	color: red;
+	font-size: 30px;	
+}
+
+
