@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--title of page -->
+    <title>login</title>
+    <link rel="icon" href="images/boda-png-novios-3.png" type="image/icon type">        
+    <!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+   <!--animation link-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<style>
+    
+body{
+margin:0;
+padding:0;
+height:635px;
+background-image: url('images/photographer/ppp.jpeg');
+background-size:100% 100%;
+background-repeat: no-repeat;
+} 
+#gtco-header .form-wrap {
+  margin-top:45px;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+#gtco-header .form-wrap .tab-menu {
+  border-top:7px solid white;  
+  padding: 0;
+  margin: 0 0 0px 0;
+  width: 100%;
+  float: left;
+  z-index: 12;
+  position: relative;
+}
+#gtco-header .form-wrap .tab-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+  float: left;
+  width: 50%;
+  text-align: center;
+  background-color:rgba(0,0,0,0.5);
+}
+#gtco-header .form-wrap .tab-menu li a {
+  text-decoration:none;
+  padding:20px 20px 20px 20px;
+  float: left;
+  width: 100%;
+  display: block;
+  color:#cebd88;
+  font-size:30px;
+  font-weight:bold;
+}
+#gtco-header .form-wrap .tab-menu li a:hover {
+  color:gray;
+}
+#gtco-header .form-wrap .tab-menu li.active a {
+  display: block;
+  padding:20px 20px 20px 20px;
+  background-color:rgba(0,0,0,0.0);
+  color:white;
+  border-bottom:3px solid white;  
+}
+#gtco-header .form-wrap .tab-content { 
+  z-index: 10;
+  position: relative;
+  clear: both;
+  background-color:rgba(0,0,0,0.5);
+  padding:40px;
+  
+}
+#gtco-header .form-wrap .tab-content .tab-content-inner {
+  display: none;
+}
+#gtco-header .form-wrap .tab-content .tab-content-inner.active {
+  display: block;
+} 
+/*input*/
+.form-control:focus {
+  background: transparent;
+  box-shadow:none;
+  background-color:beige;
+  border:none;
+}
+/*icon*/
+.input-group-prepend span{
+width: 50px;
+background-color:#cebd88;
+color:white;
+border:0 !important;
+}
+/*remember*/
+.remember{
+color: white;
+}
+.remember input{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+/*button*/
+.btn{
+color:#cebd88;
+background-color:rgba(0,0,0,0.3);
+border:3px solid #cebd88; 
+margin-right:23%;margin-top:20px;
+width:50%;
+height:50px;
+font-size:20px;
+font-weight:bolder;
+}
+.btn:hover{
+ color:white;
+background-color:#cebd88;
+}
+.links{
+color: white;
+}
+.links a{
+margin-left: 4px;
+}   
+.bg{height:100%;
+   background-color:rgba(0,0,0,0.4);
+    }  
+    
+        </style>
+	</head>
+
+<body> 
+<div class="bg" >
+<header id="gtco-header">
+		<div class="container">
+			<div class="row">
+            
+<div class="col-xl-3"></div>  
+ <div class="col-xl-5 col-md-12" data-aos="zoom-in-up">
+<div class="form-wrap">
+<div class="tab">
+<ul class="tab-menu">
+<li class="active gtco-first"><a href="#" data-tab="login" >Sign in</a></li>
+<li class="gtco-second"><a href="#" data-tab="register">Sign up</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-content-inner active" data-content="login">
+<form action="#">
+<div class="input-group form-group">
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-user"></i></span>
+     </div>
+          <input type="text" class="form-control" name="Lemail" placeholder="username" required>
+						
+</div> 
+<div class="input-group form-group">
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-key"></i></span>
+     </div>
+           <input type="password" class="form-control" name="Lpassword" placeholder="password">
+</div>												 
+<div class="row align-items-center remember">
+          <input type="checkbox">Remember Me
+</div>											  
+<div class="form-group">
+     <input type="submit" value="Login" name="Login" class="btn float-right login_btn">
+</div>
+ <br>
+	<div class="card-footer" style="margin-top:40px;text-align:center;">
+				<div class=" justify-content-center links">
+					Don't have an account?<a href="#" style="color:#cebd88">Sign Up</a>
+				</div>
+			</div>												 
+											</form>	
+										</div>
+
+<div class="tab-content-inner" data-content="register">
+<form action="#">
+                                                
+                                                
+<div class="input-group form-group">
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-user"></i></span>
+     </div>
+           <input type="password" class="form-control" placeholder="Username" required >
+</div>      
+                                                
+                                                
+                                                
+ <div class="input-group form-group"> 
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-envelope"></i> </span>
+     </div>
+           <input type="password" class="form-control" name="email"  placeholder="E-mail" required >
+</div>                                               
+                                                
+ <div class="input-group form-group">
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-key"></i></span>
+     </div>
+           <input type="password" class="form-control" name="pass" placeholder="password" required >
+</div>
+                                                
+ <div class="input-group form-group">
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-phone"></i></span>
+     </div>
+           <input type="text" class="form-control"name="pho"  placeholder="Phone" required >
+</div>                                               
+                                                
+ <div class="input-group form-group">
+     <div class="input-group-prepend">
+           <span class="input-group-text"><i class="fa fa-mars"></i></span>
+     </div>
+           <input type="text" class="form-control" placeholder="Gender">
+</div>                                               
+                                                
+    <div class="row form-group">
+				<div class="col-md-12">
+				<input type="submit" class="btn  float-right" value="Register">
+				</div>
+				</div>
+</form>	
+</div>
+
+									</div></div></div></div></div></div></header></div>
+    
+    <!-- jQuery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	 <!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script> 
+	 <!-- Bootstrap -->
+	<script src="js/main.js"></script> 
+    <!--animation link-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>  
+    </body>
+</html>

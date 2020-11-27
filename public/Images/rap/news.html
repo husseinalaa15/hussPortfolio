@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html ng-app="RapApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="app\lib\angular.min.js" ></script>
+    <script src="app\lib\angular-route.min" ></script>
+    <script src="app\lib\angular-animate.min" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+    <script src="app\app.js" ></script>
+
+
+
+
+
+	<title>
+		Heezy
+	</title>
+<link rel="icon" href="media/logo.png" type="image/gif" size="16x16">
+
+</head>
+<body style="" class="newsbody">
+  <button style="font-size:30px;"  class="btn fas fa-angle-up" id="scroll"></button>
+<button style="font-size:20px;"  class="btn fas fa-music" id="music"></button>
+
+<div class="container   ">
+<audio src="" muted="muted" style="display: none;"  class="container" controls id="audioPlayer">
+  Sorry , your Browser doesn't support Html5.
+</audio>
+
+  <ul id="playlist"class="pt-3 text-center container " >
+    <div class="col-lg-12    ">
+    <li class="current-song"><a href="media/song1.mp3"> 1:MC Eiht - Streiht Up Menace  </a>   </li>
+    <li>  <a href="media/song2.mp3">2:Fivio Foreign - 13 Going On 30   </a>   </li>
+    <li>  <a href="media/song3.mp3">3:DDG - Moonwalking in Calabasas  </a>    </li>
+  </div>
+  </ul>
+</div>
+<!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <a class="navbar-img" href="#"><img src="media/logoh.png" width=";" height="110px"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="news.php">News</a>
+    </li>
+    <li class="nav-item">
+<div>
+
+  <input type="checkbox" class="checkbox" id="checkbox" name="">
+  <label for="checkbox" class="labelc">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+
+  </label>
+</div>
+    </li>
+  </ul>
+</nav>-->
+<div class="pos">
+  <ul class="  navbar ">
+     <li class="nav-item">
+      <a class="nav-link  navlink" href="home.html">Home</a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link navlink" href="news.html">News</a>
+    </li>
+     <li class="nav-item dropdown"  >
+      <a class="nav-link navlink   dropdown-toggle"  data-toggle="dropdown"  id="dropdownMenuButton" >Hip Hop Culture</a>
+      <div class="dropdown-menu dropdown-content " aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Store</a>
+               <a  class="dropdown-item tatt"href="#">Tattoos</a>
+                <a class="dropdown-item" href="#">Concerts</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown"  >
+      <a class="nav-link navlink   dropdown-toggle"  data-toggle="dropdown"  id="dropdownMenuButton" >Rap</a>
+      <div class="dropdown-menu dropdown-content " aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Studios</a>
+               <a  class="dropdown-item"href="#">Rare Tracks</a>
+                <a class="dropdown-item" href="#">Underrated Tracks</a>
+      </div>
+    </li>
+
+
+
+
+ <li class="nav-item" >
+      <a class="nav-link navlink" href="hot.php">Hot10</a>
+    </li>
+
+    <li class="nav-item" >
+      <a class="nav-link navlink" href="store.php">About us</a>
+    </li>
+
+<li class="nav-item" >
+      <a class=" text-white facebook" href="store.php"><i class="fab fa-facebook-f"></i></a>
+      <a class=" instagram " href="store.php"><i class="fab fa-instagram"></i></a>
+      <a class=" twitter " href="store.php"><i class="fab fa-twitter"></i></a>
+
+    </li>
+        <li class="nav-item">
+    <div>
+
+  <input type="checkbox" class="checkbox" id="checkbox" name="">
+  <label for="checkbox" class="labelc">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+
+  </label>
+</div>
+    </li>
+
+  </ul>
+
+</div>
+
+
+<div class="container mainpaper mt-3">
+
+
+<div class="row">
+
+	<div class="col-lg-12 text-center mt-3">
+		<h1 class="newstitle pt-2 pb-2">
+			<i style="font-size: 15px; " class="fa fa-star"></i>
+				 Heezy News
+			<i style="font-size: 15px; " class="fa fa-star"></i>
+		</h1>
+
+
+	</div>
+
+</div>
+
+  <div class="row py-3">
+      <div id="myCarousel" class="carousel slide " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active ">
+   <div class="card" style=";">
+          <div class="row">
+
+            <div class="col-lg-6 col-md-6 " >
+
+    <img class="card-img d-block " src="media/Wayne.jpg" alt="Card image" style="width:550px; height: 550px;">
+  </div>
+
+
+  <div class="col-lg-6 col-md-6">
+    <div class="card-body ml-5 pl-5">
+      <h4 class="card-title text-center newsname ">Lil Wayne Confirms 'No Ceilings 3' Is on the Way </h4>
+      <p class="card-text pt-4 newsdesc">Lil Wayne has been on rap attack since Cash Money let him off the leash. Now, it looks like Weezy is ready to revive his patented mixtape grind by adding to a legendary series.
+
+      During a recent appearance on UFC Live on ABC, Lil Wayne told ESPN's Michael Eaves about the projects that are on deck. The rapper assured fans that Tha Carter VI will come without a delay, but first, he wants to give them a special treat.
+
+      "Carter VI coming soon," Wayne said. "But, I got No Ceilings coming first. No Ceilings 3."
+      <span class="pt-4" style="float: right; font-size:15px;">AUGUST 15,2020</span>
+    </p>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+    <div class="item">
+   <div class="card" style="">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+          <iframe style="width:550px; height: 550px;" class="card-img d-block " src="https://www.youtube.com/embed/3ULUohpQqMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
+
+  <div class="col-lg-6">
+
+    <div class="card-body ml-5 pl-5">
+
+      <h4 class="card-title text-center newsname ">Wegz has Dropped a new Track " El-Ghasala" </h4>
+
+      <p class="card-text pt-4 newsdesc">Recently Ahmed Ali Aka Wegz Kr. has dropped a new Track Video called "El-Ghasala ".
+
+
+
+      <span class="pt-5" style="float: right; font-size:15px;">July 28,2020</span>
+    </p>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+     <div class="item">
+   <div class="card" style="">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+    <img class="card-img d-block " src="media/feshawy.jpeg" alt="Card image" style="width:550px; height: 550px;">
+  </div>
+
+  <div class="col-lg-6">
+
+    <div class="card-body ml-5 pl-5 ">
+
+      <h4 class="card-title text-center newsname ">Ahmed al-Fishawi returns to hip-hop songs again </h4>
+
+      <p class="card-text pt-4 newsdesc">After recently announcing his return to "hip-hop" songs, the artist Ahmed El-Fishawy appealed to his fans, through his Instagram account,
+
+        and Al-Fishawi posted pictures, through his account, he commented: "Wait for the video.
+
+
+
+
+      <span class="pt-5" style="float: right; font-size:15px;">August 25,2020</span>
+    </p>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+  <!-- Left and right controls -->
+  <a style=""class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a style="" class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  </div>
+
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+ <script src="script.js"></script>
+ <script src="jquery.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+
+</body>
+</html>

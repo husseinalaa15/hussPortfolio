@@ -1,0 +1,164 @@
+body{
+	background-color: #f6f5f7;
+	height: 100vh;
+
+	
+
+}
+h1{
+	font-weight: bold;
+	margin:0px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+
+}
+p{
+	font-weight:100;
+	font-size:14px;
+	letter-spacing: 0.5px;
+	margin: 20px 0px 30px;
+	text-align: center;
+	color:white;
+
+}
+
+
+.Hello{
+		margin-top: 40%;
+}
+.welcome{
+	margin-top: 40%;
+}
+
+
+.middle{
+	position: absolute;
+	top:50%;
+	right: 40%;
+	transform:translate(-50%,-50%);
+	background:#f6f5f7;
+
+
+
+
+}
+.middle2{
+	position: absolute;
+	top:50%;
+	left: 65%;
+	transform:translate(-50%,-50%);
+	background:#f6f5f7;
+
+
+
+
+}
+
+.card{
+	cursor: pointer;
+	width: 400px;
+	height: 480px;
+	box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+
+}
+
+.signup form{
+
+
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.signup input{
+	background-color: #eee;
+	border:none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width:100%;
+}
+button{
+	border-radius: 20px;
+	border:none;
+	background-color: #40e0d0;
+	color:white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	text-transform: uppercase;
+	margin-top: 15px; 
+
+}
+button:active{
+	transform:scale(0.95);
+}
+
+button:focus{
+	outline: none;
+}
+.front ,.back{
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+
+.front{
+	background-image: url(begg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	transform:perspective(600px) rotateY(0deg);
+}
+.back{
+	background-image: url(beg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform:perspective(600px) rotateY(180deg);
+}
+.card:hover >.front{
+	transform:perspective(600px) rotateY(-180deg);
+}
+.card:hover >.back{
+	transform:perspective(600px) rotateY(0deg);
+}
+
+/*------------------------------------------------------*/
+.front2 ,.back2{
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+
+.front2{
+	background-image: url(bgee.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	transform:perspective(600px) rotateY(0deg);
+}
+.back2{
+	background-image: url(bge.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform:perspective(600px) rotateY(180deg);
+}
+.card:hover >.front2{
+	transform:perspective(600px) rotateY(-180deg);
+}
+.card:hover >.back2{
+	transform:perspective(600px) rotateY(0deg);
+}

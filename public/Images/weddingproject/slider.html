@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slider</title>
+   
+ <link rel="stylesheet" href="file/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+  
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+ @font-face{
+            font-family:wedding;
+            src:url("fonts/wedding.ttf")
+        }    
+ @font-face{
+            font-family:best;
+            src:url("fonts/best.ttf")
+        }
+@font-face{
+            font-family:ball;
+            src:url("fonts/ball.ttf")
+        }     
+.container-fluid{
+    width:90%;
+    margin-top:10px; 
+    position: relative;
+    justify-content: space-between;
+}
+.container-fluid .card{
+    position: relative;
+    cursor: pointer;
+    background-color:whitesmoke;
+    border:none;
+    width:100%;
+    
+}
+.container-fluid .card .face{
+    width:100%;
+    height: 250px;
+    transition: 0.5s;
+}
+.container-fluid .card .face.face1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container-fluid .card:hover .face.face1{
+    background-color:#029585  ;
+    transform: translateY(0);
+}
+.container-fluid .card .face.face1 .content{
+    opacity:1;
+    transition: 0.5s;
+    width:100%; 
+}
+.container-fluid .card:hover .face.face1 .content{
+    opacity:0.5;
+    
+}  
+.container-fluid .card:hover{
+    margin-top:10px;
+}
+.container-fluid .card .face.face1 .content img{
+    width:100%;
+    height:250px;
+    
+}
+.container-fluid .card .face.face2{
+    position: relative;
+    background-color:rgba(0,0,225,0.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0, 0, 0.1);
+    transform: translateY(-100px);
+    height:120px;
+}
+.container-fluid .card:hover .face.face2{
+    transform: translateY(0);
+ 
+}
+.container-fluid .card .face.face2 .content p{
+    font-size:24px;
+    font-weight:500;
+    color:#029585 ;
+    text-align: center;
+    font-family:;
+    }
+.container-fluid .card .face.face2 .content .btn{
+  display: inline-block;
+  background-color:#029585;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size:25px;
+  padding:5px;
+  width: 150px;
+  border-radius:20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:auto;
+  font-family:;
+ 
+}
+.btn-dark{
+  display: inline-block;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size:22px;
+  padding:5px;
+  width:80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top:10px;
+  border-radius:20px;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right:20px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}    
+    
+    
+/* end cards ...........................................................................................................   
+    
+ 
+/* title   */
+.title{
+   color:#029585;
+   text-align: center;
+   font-size:120px;
+   font-family:best; 
+    }
+.para{
+    color:;
+   text-align: center;
+   font-size:20px;
+   
+    } 
+    
+    
+/*video*/
+ section {
+  position: relative;
+  background-color: black;
+  height:80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+    }
+
+section .overlay-wcs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+/* start    */
+      
+      .appointment{
+        margin-top:50px;
+       text-align:center;
+        background-image:url(images/r1.jpg); 
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+       }
+      .appo{ 
+        padding:40px;
+        background-color:rgba(0,0,0,0.7);
+        width:100%;
+       } 
+      .wform{
+          border:none;
+          padding-top:60px;
+          text-align:left;
+      }
+      .wform h1{
+         color:whitesmoke;
+         font-size:60px;
+         font-weight:400;
+          
+      }
+      .wform span{
+          color:#029585;
+          font-family:fantasy;
+          font-size:80px;
+      }
+      .form1{
+        padding:10px;
+        }
+      .form1 h2{
+          color:#029585;
+          padding:10px;
+      }
+      .form1 input , .form1 select{
+          width:80%;
+          height:40px;
+          padding:10px;
+          margin: 5px 0 15px 0;
+          border: none;
+          background: #f1f1f1;
+      }
+      .form1 input:focus , .form1 select:focus {
+        background-color: #ddd; 
+      }
+      .form1 .btn ,.flip-card-back .btn{
+        background-color:#029585; 
+        color:white;
+        border: none;
+        cursor: pointer;
+        width:80%;
+        font-size:20px;
+        font-weight:bold;
+        height:50px;
+            
+}
+/*..........................................................................................*/
+      .fa-play-circle{
+         font-size:80px;color:#029585;margin:auto; 
+      }      
+       .fa-play-circle:hover{
+       color: aliceblue;
+      } 
+    
+</style>
+<body>
+<!-- videoooooooooooooooooooooooo   -->
+ 
+
+    
+<section >
+  <div class="overlay-wcs"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/1.mp4" type="video/mp4">
+  </video>
+</section>   
+   
+    
+     
+    
+    
+    
+    
+    
+    
+<!--  cards image  -->
+<div class="container-fluid" style="text-align:center;">
+    <h1 class="title" data-aos="fade-up"> Photographer </h1>
+ <p class="para" data-aos="fade-up"><i>A professional photographer is likely to take photographs for a session and image purchase fee, by salary or through the display, resale or use of those photographs, may be an employee, for example of a newspaper, or may contract to cover a particular planned event such as a wedding or graduation party.</i></p>
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    <img src="images/flower.png" style="margin:10px;width:30px;">
+    <img src="images/121716.png" style="width:80px;height:15px;">
+      <div class="row"> 
+ 
+          
+<!--  image 1        -->
+ 
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4"
+     data-aos="fade-right">
+<div class="card">
+<div class="face face1">
+<div class="content">
+    <img src="images/pexels-photo-2253870.jpeg">
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>Rafik Fouad-Photographer</p>  
+<a data-toggle="modal" data-target=".bd-example-modal-xl"><button class="btn" style="vertical-align:middle"><span> See More </span></button></a>
+</div>
+</div>
+</div>
+</div>
+ 
+          
+  <!--  image 2        -->
+ 
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" 
+     data-aos="fade-down">
+<div class="card">
+<div class="face face1">
+<div class="content">
+    <img src="images/w4.jpg">
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>Rafik Fouad-Photographer</p>  
+<a data-toggle="modal" data-target=".bd-example-modal-xl2"><button class="btn" style="vertical-align:middle"><span> See More </span></button></a>
+</div>
+</div>
+</div>
+</div>
+  <!--  image 3        -->
+ 
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4"  
+     data-aos="fade-left">
+<div class="card">
+<div class="face face1">
+<div class="content">
+    <img src="images/240_F_291419812_sYe2iXzaqWuhpUR5MKZ9YESM79cv2mHl.jpg">
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>Rafik Fouad-Photographer</p>  
+<a data-toggle="modal" data-target=".bd-example-modal-xl2"><button class="btn" style="vertical-align:middle"><span> See More </span></button></a>
+</div>
+</div>
+</div>
+</div>
+                
+   <!--  image 4        -->
+ 
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" 
+     data-aos="fade-right" >
+<div class="card">
+<div class="face face1">
+<div class="content">
+    <img src="images/w1.jpg">
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>Rafik Fouad-Photographer</p>  
+<a data-toggle="modal" data-target=".bd-example-modal-xl2"><button class="btn" style="vertical-align:middle"><span> See More </span></button></a>
+</div>
+</div>
+</div>
+</div> 
+          
+    <!--  image 5       -->
+ 
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4"  
+     data-aos="fade-down">
+<div class="card">
+<div class="face face1">
+<div class="content">
+    <img src="images/pexels-photo-1445697.jpeg">
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>Rafik Fouad-Photographer</p>  
+<a data-toggle="modal" data-target=".bd-example-modal-xl2"><button class="btn" style="vertical-align:middle"><span> See More </span></button></a>
+</div>
+</div>
+</div>
+</div> 
+          
+      <!--  image 6        -->
+ 
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" 
+     data-aos="fade-left">
+<div class="card">
+<div class="face face1">
+<div class="content">
+    <img src="images/r1.jpg">
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>Rafik Fouad-Photographer</p>  
+<a data-toggle="modal" data-target=".bd-example-modal-xl2"><button class="btn" style="vertical-align:middle"><span> See More </span></button></a>
+</div>
+</div>
+</div>
+</div>
+   
+          
+<!--          video           -->
+  <div class="container" id="as" style="text-align:center;margin-top:100px;margin-bottom:60px;">        
+  <p style="color:gray;font-size:20px;">We Are Photographer</p>
+  <p style="font-size:28px;word-spacing:3px;"><span style="font-weight:bolder;"> OUR VIDEO </span> SESSION </p> 
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    <img src="images/flower.png" style="margin:10px;width:30px;">
+    <img src="images/121716.png" style="width:80px;height:15px;">        
+    </div>        
+<!--  video 1....................................        -->
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4" style="height:250px;">
+ <div class="card" style="background-image: url(images/r2.jpg);height:100%;background-repeat: no-repeat;width:100%;background-size:cover;">
+    <i class='far fa-play-circle'  data-toggle="modal" data-target="#myModalv1"></i>
+     </div>
+</div>
+   <!-- The Modal -->
+  <div class="modal fade" id="myModalv1" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <iframe  width="100%" height="500"  src="https://www.youtube.com/embed/pmMRaHaq5JM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        </div>
+       
+     
+      </div>
+    </div>
+  </div>
+          
+<!--  video 2 .........................................       -->
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+ <div class="card" style="background-image: url(images/pexels-photo-1043902.jpeg);height:100%;background-repeat: no-repeat;background-size:cover;">
+    <i class='far fa-play-circle'  data-toggle="modal" data-target="#myModalv2"></i>
+     </div>
+</div>
+    <!-- The Modal -->
+<div class="modal fade" id="myModalv2" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/Z0lU5g67394" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       
+        
+      </div>
+    </div>
+  </div>
+          
+  <!-- video 3 .............................................................       -->
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+ <div class="card" style="background-image: url(images/pexels-photo-916340.jpeg);height:100%;background-repeat: no-repeat;background-size:cover;">
+    <i class='far fa-play-circle'  data-toggle="modal" data-target="#myModalv3"></i>
+     </div>
+</div> 
+  <!-- The Modal -->
+<div class="modal fade" id="myModalv3" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/Uy8P3SHFRNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+       
+        
+      </div>
+    </div>
+  </div>
+          
+          
+          
+                   
+          
+<!--photo session-->
+          
+  <div class="container" id="as" style="text-align:center;margin-top:70px;margin-bottom:50px;" >        
+  <p style="color:gray;font-size:20px;">We Are Photographer</p>
+<p style="font-size:28px;word-spacing:3px;"><span style="font-weight:bolder;"> OUR PHOTO </span> SESSION </p> 
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    <img src="images/flower.png" style="margin:10px;width:30px;">
+    <img src="images/121716.png" style="width:80px;height:15px;">        
+</div>
+        
+<!--  image 1        -->
+ 
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+     data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+<a data-toggle="modal" data-target="#myModalimg1" >
+<img src="images/pexels-photo-3014859.jpeg" style="width:100%;height:200px;margin-bottom:20px;">    
+    </a> 
+</div>
+  <!-- modal 1 -->
+<div class="modal fade" id="myModalimg1" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+                  
+       
+ <div id="carouselExampleControlsimg1" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <img src="images/pexels-photo-3014859.jpeg"  style="width:100%;height:520px;" > 
+    </div>
+    <div class="carousel-item">
+      <img   src="images/pexels-photo-3014857.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>
+     <div class="carousel-item">
+      <img  src="images/r3.jpg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/r6.jpg" style="width:100%;height:520px;">
+    </div> 
+     <div class="carousel-item">
+      <img  src="images/r5.jpg" style="width:100%;height:520px;">
+    </div>  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControlsimg1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControlsimg1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<!-- end slider--> 
+        </div></div></div></div>        
+ 
+        
+ <!--  image 2       -->
+ 
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+     data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"  >
+<div class="card">
+<a data-toggle="modal" data-target="#myModalimg2" >
+<img src="images/pexels-photo-3014857.jpeg" style="width:100%;height:200px;">    
+    </a> 
+</div></div>
+  <!-- modal 1 -->
+<div class="modal fade" id="myModalimg2" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+                  
+       
+ <div id="carouselExampleControlsimg2" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/pexels-photo-3014857.jpeg"  style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>
+     <div class="carousel-item">
+      <img  src="images/r3.jpg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/r6.jpg" style="width:100%;height:520px;">
+    </div> 
+     <div class="carousel-item">
+      <img  src="images/r5.jpg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div> 
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControlsimg2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControlsimg2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<!-- end slider--> 
+        </div></div></div></div>   
+           
+<!--  image 3       -->
+ 
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+     data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
+<div class="card">
+<a data-toggle="modal" data-target="#myModalimg3" >
+<img src="images/pexels-photo-3014860.jpeg" style="width:100%;height:200px;">    
+    </a> 
+</div></div>
+  <!-- modal 1 -->
+<div class="modal fade" id="myModalimg3" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+                  
+       
+ <div id="carouselExampleControlsimg3" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/pexels-photo-3014860.jpeg"  style="width:100%;height:520px;">
+    </div>
+     <div class="carousel-item">
+      <img  src="images/r3.jpg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/r6.jpg" style="width:100%;height:520px;">
+    </div> 
+     <div class="carousel-item">
+      <img  src="images/r5.jpg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/pexels-photo-3014857.jpeg" style="width:100%;height:520px;">
+    </div> 
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControlsimg3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControlsimg3" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<!-- end slider--> 
+        </div></div></div></div> 
+          
+  <!--  image 4       -->
+ 
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+     data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
+<div class="card">
+<a data-toggle="modal" data-target="#myModalimg4" >
+<img src="images/r3.jpg" style="width:100%;height:200px;">    
+    </a> 
+</div></div>
+  <!-- modal 1 -->
+<div class="modal fade" id="myModalimg4" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+                  
+       
+ <div id="carouselExampleControlsimg4" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/r3.jpg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/r6.jpg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/r5.jpg" style="width:100%;height:520px;">
+    </div>
+        <div class="carousel-item">
+      <img  src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/pexels-photo-3014857.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControlsimg4" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControlsimg4" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<!-- end slider--> 
+        </div></div></div></div> 
+          
+                  
+<!--  image 5       -->
+ 
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+     data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" >
+<div class="card">
+<a data-toggle="modal" data-target="#myModalimg5" >
+<img src="images/r6.jpg" style="width:100%;height:200px">    
+    </a> 
+</div></div>
+  <!-- modal 1 -->
+<div class="modal fade" id="myModalimg5" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+                  
+       
+ <div id="carouselExampleControlsimg5" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/r6.jpg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/r5.jpg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/pexels-photo-3014857.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/r3.jpg" style="width:100%;height:520px;">
+    </div>  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControlsimg5" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControlsimg5" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<!-- end slider--> 
+        </div></div></div></div> 
+          
+ <!--  image 6      -->
+ 
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+     data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"  >
+<div class="card">
+<a data-toggle="modal" data-target="#myModalimg6" >
+<img src="images/r5.jpg" style="width:100%;height:200px">    
+    </a> 
+</div></div>
+  <!-- modal 6 -->
+<div class="modal fade" id="myModalimg6" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+                  
+       
+ <div id="carouselExampleControlsimg6" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/r5.jpg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div>
+      <div class="carousel-item">
+      <img  src="images/pexels-photo-3014857.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img  src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/r3.jpg" style="width:100%;height:520px;">
+    </div>
+       <div class="carousel-item">
+      <img src="images/r6.jpg" style="width:100%;height:520px;">
+    </div>  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControlsimg6" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControlsimg6" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+ 
+<!-- end slider--> 
+        </div></div></div></div> 
+          
+                             
+          
+          
+  
+  <!-- Extra large modal 1 -->
+          
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" style="width:100%;">
+  <div class="modal-dialog modal-xl" role="document">
+      
+    <div class="modal-content" style="padding:25px;">
+    <div class="container-fluid" style="width:100%;">
+    <div class="row"> 
+        
+<!--slider         -->
+        
+    <div class="col-xl-6 col-md-12">   
+ <div id="carouselExampleControls12" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/pexels-photo-3014857.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls12" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls12" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+</div>
+<!-- end slider-->
+        
+  <div class="col-xl-6 col-md-12">
+      <h2>Lamia Khazbak-Photography</h2>
+      <hr style="width:100px;border:1px solid black;">
+      <p style="text-align:center;">
+Lamia Khazbak is a professional photographer who specializes in more than one field in photography such as fashion, wedding <br> and parties.
+Before remaining a professional photographer, Lamia was primarily an electrical energy engineer, and she decided to change her career from more than 7 years.</p>
+     
+        <div style="margin:25px;text-align:left;">
+             
+                <i class="fa fa-map-marker" style="text-align:left; color:gray;font-size:22px;margin-left:25%;"></i>
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:20px;">
+                heliopolis , Cairo , Egypt . 
+            </span> 
+        </div>
+        <div style="margin:25px;text-align:left;">
+             
+                <i class="fa fa-phone" style="text-align:left; color:gray;font-size:22px;margin-left:25%;"></i>
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:20px;">
+              
+             01111736167  
+            </span> 
+        </div>
+       <div style="margin:25px;text-align:left;">
+              <i class="fa fa-thumbs-up" style="text-align:left; color:gray;font-size:22px;margin-left:25%;"></i>
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:20px;">
+            36,683 people like this .
+            </span> 
+        </div>
+       <div style="margin:25px;text-align:left;">
+              <i class="fa fa-star" style="text-align:left;color:orange;font-size:22px;margin-left:40%;"></i>
+              <i class="fa fa-star" style="color:orange;font-size:22px;"></i>
+              <i class="fa fa-star" style="color:orange;font-size:22px;"></i>
+              <i class="fa fa-star" style="color:orange;font-size:22px;"></i>
+        </div>
+        <div style="margin:25px;text-align:left;">
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:40%;">
+                Price : £2000 
+            </span> 
+        </div>
+      <button class="btn btn-dark " style="vertical-align:middle"><span> Booking Now  </span></button>
+      </div>   
+        </div>
+        </div></div></div>
+    </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      <!-- Extra large modal 2 -->
+          
+<div  class="modal fade bd-example-modal-xl2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" style="width:100%;">
+  <div class="modal-dialog modal-xl" role="document">
+      
+    <div class="modal-content" style="padding:25px;">
+    <div class="container-fluid" style="width:100%;">
+    <div class="row"> 
+        
+<!--slider         -->
+        
+    <div class="col-xl-6 col-md-12">   
+ <div id="carouselExampleControls122" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/pexels-photo-1043902.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pexels-photo-3014859.jpeg" style="width:100%;height:520px;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pexels-photo-3014860.jpeg" style="width:100%;height:520px;">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls122" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls122" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+</div>
+<!-- end slider-->
+        
+  <div class="col-xl-6 col-md-12">
+      <h2>Lamia Khazbak-Photography</h2>
+      <hr style="width:100px;border:1px solid black;">
+      <p style="text-align:center;">
+Lamia Khazbak is a professional photographer who specializes in more than one field in photography such as fashion, wedding <br> and parties.
+Before remaining a professional photographer, Lamia was primarily an electrical energy engineer, and she decided to change her career from more than 7 years.</p>
+     
+        <div style="margin:25px;text-align:left;">
+             
+                <i class="fa fa-map-marker" style="text-align:left; color:gray;font-size:22px;margin-left:25%;"></i>
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:20px;">
+                heliopolis , Cairo , Egypt . 
+            </span> 
+        </div>
+        <div style="margin:25px;text-align:left;">
+             
+                <i class="fa fa-phone" style="text-align:left; color:gray;font-size:22px;margin-left:25%;"></i>
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:20px;">
+              
+             01111736167  
+            </span> 
+        </div>
+       <div style="margin:25px;text-align:left;">
+              <i class="fa fa-thumbs-up" style="text-align:left; color:gray;font-size:22px;margin-left:25%;"></i>
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:20px;">
+            36,683 people like this .
+            </span> 
+        </div>
+       <div style="margin:25px;text-align:left;">
+              <i class="fa fa-star" style="text-align:left;color:orange;font-size:22px;margin-left:40%;"></i>
+              <i class="fa fa-star" style="color:orange;font-size:22px;"></i>
+              <i class="fa fa-star" style="color:orange;font-size:22px;"></i>
+              <i class="fa fa-star" style="color:orange;font-size:22px;"></i>
+        </div>
+        <div style="margin:25px;text-align:left;">
+              <span style="color:gray;font-size:17px;text-align:left;margin-left:40%;">
+                Price : £2000 
+            </span> 
+        </div>
+      <a  href="#book"><button data-dismiss="modal" class="btn btn-dark "  style="vertical-align:middle"><span> Booking Now  </span></button></a>
+      </div>   
+        </div>
+        </div></div></div>
+    </div>      
+          
+          
+          
+          
+          
+          
+          
+     
+    </div>  
+    </div>
+      
+     
+ 
+ 
+    
+ <footer class="footer">
+     
+<div class="footer22">    
+<div class="container">
+     
+<div class="row">
+      
+<div class="col-md-4 col-sm-12">
+     <h3>RECENT POSTS</h3><br>
+  <p>BULGARIA CLAIMS TO FIND EUROPE'S 'OLDEST TOWN'<br>
+Posted by John Doe in Blog<br><br>
+
+FEW ANSWERS IN CASE OF MURDERED LAW PROFESSOR<br>
+Mar 15, 2015 03<br><br>
+
+OVER THE YEAR WE HAVE LOTS OF EXPERIENCE IN OUR FIELD<br>
+Apr 17, 2015 14</p>  
+    </div>   
+<div class="col-md-4 col-sm-12" >
+<h3>FLICKR PHOTOS</h3><br>
+<a class="thumb-holder" href="images/1.jpg">
+    <img src="images/1.jpg" width="28%" height="80px" style="margin:5px;">
+    </a>   
+<a class="thumb-holder" href="images/9.jpg">
+    <img src="images/9.jpg" width="28%" height="80px" style="margin:5px;">
+    </a>
+<a class="thumb-holder" href="images/8.jpg">
+    <img src="images/8.jpg"   width="28%" height="80px" style="margin:5px;">
+    </a>
+<a class="thumb-holder" href="images/7.jpg">
+    <img src="images/7.jpg"  width="28%" height="80px" style="margin:5px;">
+    </a>   
+<a class="thumb-holder" href="images/6.jpg">
+    <img src="images/6.jpg"  width="28%" height="80px" style="margin:5px;">
+    </a>
+<a class="thumb-holder" href="images/5.jpg">
+    <img src="images/5.jpg"   width="28%" height="80px" style="margin:5px;">
+    </a>
+<a class="thumb-holder" href="images/4.jpg">
+    <img src="images/4.jpg"  width="28%" height="80px" style="margin:5px;">
+    </a>   
+<a class="thumb-holder" href="images/3.jpg">
+    <img src="images/3.jpg"  width="28%" height="80px" style="margin:5px;">
+    </a>
+<a class="thumb-holder" href="images/2.jpg">
+    <img src="images/2.jpg"  width="28%" height="80px" style="margin:5px;">
+    </a> 
+    <br><br><br>
+  <div class="col-md-12">
+					<ul   style="list-style-type: none;">
+						<li>
+							<a title="Twitter" href="#">
+								<span class="icon-footer" ><i class="fa fa-twitter"></i></span>
+							</a>
+							<a title="Facebook" href="#">
+								<span class="icon-footer" ><i class="fa fa-facebook"></i></span>
+							</a>
+							<a title="linkedin" href="#">
+								<span  class="icon-footer"><i class="fa fa-linkedin"></i></span>
+							</a>
+							<a title="Pinterest" href="#">
+								<span class="icon-footer"><i class="fa fa-pinterest"></i></span>
+							</a>
+							<a title="Skype" href="#">
+								<span class="icon-footer"><i class="fa fa-skype"></i></span>
+							</a>
+						 
+						</li>
+					</ul>
+				</div>  
+    </div>     
+<div class="col-md-4 col-sm-12" >
+<h3>ABOUT CRAFT</h3><br>
+ <p>We are a awward winning multinational company. We believe in <br> quality and standard worldwide.</p>
+<h4>ADDRESS</h4>
+<p>1102 Saint Marys, Junction City, KS</p>
+<h4>EMAIL:</h4>
+<p>info@craftbd.com</p>
+<h4>PHONE NO.</h4>
+<p>+(785) 238-4131</p>   
+    </div> 
+    </div>
+ <div class="row">
+				<div class="col-md-12">
+					<div class="copyright-info">
+         			 &copy; Copyright 2019 Themefisher. <span>Designed by <a href="https://themefisher.com">Themefisher.com</a></span>
+        			</div>
+				</div>
+			</div>   
+   
+    </div>    
+       
+  
+    </div>    
+    </footer>    
+    
+    
+    
+ <style>
+.footer{
+	 
+	background: #2e2e2e url(images/1.jpg) no-repeat center 0; 
+	background-size:100% 100%;
+	color: #fff;
+	font-size: 14px;
+    margin-top:50px;
+     
+
+}  
+.footer22{padding: 60px 0 100px;background-color:rgba(0,0,0,0.8);height:100%;}
+.footer h4{
+    color: #ee3b24;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: normal;
+    font-family: 'JaapokkiRegular';
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    font-weight: bold;
+     }   
+ .footer p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6em;
+}   
+.icon-footer{
+     font-size:22px;
+     line-height: 24px;
+     background-color:white;
+     padding:02px 10px;
+     margin:2px;
+     border-radius:50%;
+     color: #ee3b24;
+     }
+ 
+.copyright-info{
+  text-align: center;
+  margin-top:20px;
+  font-size:20px;
+     } 
+.copyright-info a{
+    color: #ee3b24;      
+     }
+    </style>   
+    
+    
+    
+  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+  AOS.init();
+</script>
+    
+</body>
+</html>
+ 

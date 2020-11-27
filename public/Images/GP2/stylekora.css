@@ -1,0 +1,669 @@
+body{
+  font-family: 'club type', cursive;
+
+}
+.navbar-brand{
+    font-weight: bold;
+
+}
+.navbar{
+  height: 5%;
+}
+
+.carousel-item {
+  height: 98vh;
+  min-height: 350px;
+
+  background: no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.seemore{
+    padding: 12px;
+    margin-bottom: 10px;
+
+}
+.f1 h2,.b1 h2,.j1 h2{
+  font-weight: bold;
+  
+
+}
+.f1 p,.b1 p,.j1 p{
+  font-weight: bold;
+  
+
+}
+.footer{
+  height:5%;
+
+}
+.ba{
+  background-color: #fcf8f3;
+}
+.ba2{
+  background-image: url(fp3.jpg) ;
+  background-size: cover;
+  font-weight: bold;
+}
+.ba3{
+  background: linear-gradient(to bottom, #fcf8f3 60%, rgba(205,223,0,0.43));
+  font-weight: bold;
+}
+.ba4{
+  background: linear-gradient(to bottom, #fcf8f3 50%, rgba(215, 89, 44, 0.4));
+}
+.ba5{
+    background: linear-gradient(to bottom, #ededed 50%, rgba(180, 94, 149, 0.4));
+
+}
+.ba6{
+    background:  #ededed  ;
+
+}
+.seemoreclub{
+  padding: 12px;
+    margin-bottom: 10px;
+  background-color: #937d14;
+}
+.seemoreclub:hover{
+   background-color: #f4e04d;
+
+}
+.txtp{
+  padding-top: 90px;
+}
+/*Sign Up */
+
+/*body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#34ADFF 50%,#4cbfff 50%);
+}
+.upfront{
+margin-top: -20px;
+background-image: url(koo.jpg) ;
+background-size: cover;
+height: 44vh;
+width: 100%;
+background-repeat: no-repeat;
+position: absolute;
+}
+.upfront h1{
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.upfront a{
+  margin-top: 30px;
+  padding: 10px;
+  width: 10%;
+}
+.dwnfront {
+background-image: url(ko.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+margin-top: 91px;
+height:44vh;
+position: absolute;
+}
+@media (max-width:768px){
+  .dwnfront{
+    background-size: 105% 100%;
+    margin-top: 35px;
+
+
+  }
+
+
+.upback h2{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.upback input{
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  border:none;
+  padding:5px;
+  margin: 5px;
+
+}
+.upback a{
+  color: black;
+  background-color: #9fd3c7;
+
+}
+.upback a:hover{
+  color: black;
+  background-color: #c8e6f5;
+
+}
+
+.show2 {
+background-image: url(ko.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+width: 100%;
+height: 60%;
+
+}
+.joinus{
+  margin-top: 15%;
+  color: black;
+}
+.welcomeback{
+  margin-top: 15%;
+  color: white;
+}
+*/
+
+
+
+.sic{
+  height: 100vh;
+  display: flex;
+  background-color: #1b262c;
+}
+section{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: all .5s;
+}
+section:hover{
+  flex:2;
+}
+section h1{
+  background:rgba(0,0,0,0.6);
+  color:white;
+  padding: 12px 32px;
+}
+section a{
+ background:rgba(0,0,0,0.6);
+  color:white;
+  padding: 12px 32px;
+}
+
+.left{
+  background:url(kj.jpg) #9fd3c7;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+.right{
+  background:url(kw.jpg) #21aa93;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+.SHOW form{
+  background:rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+
+}
+
+.SHOW h2{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-top: 30px;
+}
+.SHOW input{
+  border:none;
+  border-radius: 5px;
+  border-width: 50%;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+
+}
+/*------------------------------------------------*/
+/*  FOOTBAL.html PAGE  */
+
+/*.FBG{
+
+  background-color: #f9fcfb;
+  background-image: url(aaaa.png) ;
+  animation: fbg 75s linear infinite;
+  background-size: 2% 10%;
+  background-repeat: no-repeat;
+
+
+
+
+}
+
+@keyframes fbg{
+  0%{background-position: 100% 100% ;}
+  100%{
+    background-position: -2000px 500px;
+  }
+}
+*/
+.Ftit{
+  border-left:11px solid #2b580c ;
+  background: #639a67;
+  background-image: url(HB.png);  
+  background-blend-mode: overlay;
+
+}
+.Ftit h1{
+    color:white;
+
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.49);
+
+}
+.price{
+  color:red;
+  font-weight: bold;
+}
+.select-time{
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  
+  border-radius: 5px;
+  border: 1px solid green;
+  padding:5px;
+  outline: none;
+  font-family: 'FontAwesome', 'open sans-serif';
+  background:rgba(0,255,0,0.13);
+
+}
+.select-time option{
+  font-weight: bold;
+  text-align: center;
+   font-family: 'FontAwesome', 'open sans-serif';
+}
+.book{
+  background-color: #2b580c;
+  padding:10px;
+  margin-top: 10px;
+  width: 50%;   
+}
+.book:hover{
+  background-color: #91bd3a;
+}
+.nearby h3{
+  font-size: 30px;
+}
+.checkboxes{
+  color: black;
+  font-size: 15px;
+
+}
+.seemoref{
+  background-color: #235952;
+}
+.seemoref:hover{
+    background-color: #639a67;
+
+}
+.card{
+  border-radius:15px;
+}
+.card-img-top{
+  border-radius: 10px;
+
+}
+
+.FBG{
+background-image:url(bk.jpg);
+}
+.dropdown-menu input{
+  font-weight: bold;
+  color:red;
+
+}
+/*----------------BASKET BALL ------------*/
+.BBG{
+  background-image: url(bkk.jpg);
+  background-size: 100% 100%;
+}
+.Ftitb{
+  border-left:11px solid #ea6227 ;
+  background: #f57b51;
+  background-image: url(hbb.png);  
+  background-blend-mode: o\\\\y;
+
+}
+.Ftitb h1{
+    color:white;
+
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.49);
+
+}
+.price{
+  color:red;
+  font-weight: bold;
+}
+.select-timeb{
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  
+  border-radius: 5px;
+  border: 1px solid orange;
+  padding:5px;
+  outline: none;
+  font-family: 'FontAwesome', 'open sans-serif';
+  background:RGBA(255,169,60,0.2);
+
+}
+.select-timeb option{
+  font-weight: bold;
+  text-align: center;
+   font-family: 'FontAwesome', 'open sans-serif';
+}
+.bookb{
+  background-color: #5a3f11;
+  padding:10px;
+  margin-top: 10px;
+  width: 50%;   
+}
+.bookb:hover{
+    background-color: #ef962d;
+}
+.nearby h3{
+  font-size: 30px;
+}
+.checkboxes{
+  color: black;
+  font-size: 15px;
+
+}
+.seemoreb{
+  background-color: #5a3f11;
+}
+.seemoreb:hover{
+    background-color: #ef962d;
+
+}
+.cardb{
+  border-radius:15px;
+  background:#b7472a;
+}
+.card-img-top{
+  border-radius: 10px;
+
+}
+
+
+.dropdown-menu input{
+  font-weight: bold;
+  color:red;
+
+}
+/*------------------- Clubs ------------------*/
+
+
+.CBG{
+  background-image: url(cbg.png);
+  background-size: 100% 100%;
+}
+.Ftitc{
+  border-left:11px solid #005082 ;
+  background: #3b6978;
+  background-image: url(hbbb.png);  
+  background-blend-mode:overlay ;
+
+}
+.Ftitc h1{
+    color:white;
+
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.49);
+
+}
+.price{
+  color:red;
+  font-weight: bold;
+}
+.select-timeb{
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  
+  border-radius: 5px;
+  border: 1px solid orange;
+  padding:5px;
+  outline: none;
+  font-family: 'FontAwesome', 'open sans-serif';
+  background:RGBA(255,169,60,0.2);
+
+}
+.select-timeb option{
+  font-weight: bold;
+  text-align: center;
+   font-family: 'FontAwesome', 'open sans-serif';
+}
+.bookb{
+  background-color: #5a3f11;
+  padding:10px;
+  margin-top: 10px;
+  width: 50%;   
+}
+.bookb:hover{
+    background-color: #ef962d;
+}
+.nearby h3{
+  font-size: 30px;
+}
+.checkboxes{
+  color: black;
+  font-size: 15px;
+
+}
+.seemorec{
+  background-color: #204051;
+}
+.seemorec:hover{
+    background-color: #3b6978;
+
+}
+.cardc{
+  border-radius:15px;
+  background:#202040;
+}
+.card-img-top{
+  border-radius: 10px;
+
+}
+/*-------------------- SHOP PAGE --------------------------  */
+.SPG {
+  box-sizing: border-box;
+
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+
+
+/* Change background color of buttons on hover */
+.tab .football:hover {
+  background-color: #2b580c;
+  color: white;
+}
+.tab .basketball:hover {
+  background-color: #ea6227;
+  color: white;
+}
+.tab .swimming:hover {
+  background-color: #5b8c85;
+  color: white;
+}
+/* Create an active/current tablink class */
+.tab .football.active {
+  background-color: #2b580c;
+  color:white;
+}
+.tab .basketball.active {
+  background-color: #af460f;
+  color:white;
+}
+.tab .swimming.active {
+  background-color: #204051;
+  color:white;
+}
+
+
+/* Create a column layout with Flexbox */
+.rowshop {
+  display: flex;
+}
+
+/* Left column (menu) */
+.leftshop {
+  padding: 10px 20px;
+  height: auto;
+
+}
+
+.leftshop h2 {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.leftshop h3 {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.leftshopb {
+  padding: 10px 20px;
+  height: auto;
+
+}
+
+.leftshopb h2 {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.leftshopb h3 {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.leftshops {
+  padding: 10px 20px;
+  height: auto;
+
+}
+
+.leftshops h2 {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.leftshops h3 {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Right column (page content) */
+.rightshop {
+  flex:20%;
+  padding: 15px;
+  height: 325vh;
+}
+
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leftshop #myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: #baf1a1;
+  display: block;
+
+}
+
+
+
+.leftshop #myMenu li a:hover {
+  background-color: #639a67;
+}
+
+
+.leftshopb #myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: #ffd5ab;
+  display: block;
+
+}
+.leftshopb #myMenu li a:hover {
+  background-color: #ea6227;
+}
+
+
+
+.leftshops #myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: #e9fadd;
+  display: block;
+
+}
+.leftshops #myMenu li a:hover {
+  background-color: #5b8c85;
+}
+
+/*shop button buy*/
+.buy{
+  width:100%;
+  font-size: 15px;
+}
+
+/* SHOP CARD BODY INPUTS */
+
+.inputtxt{
+  color:black;
+  font-size:15px;
+  font-weight: bold;
+}
+

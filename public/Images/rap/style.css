@@ -1,0 +1,566 @@
+/*		FONTS 		*/
+@font-face {
+   font-family: myFirstFont;
+   src: url(media/gang.ttf);
+}
+@font-face {
+   font-family: mySecondFont;
+   src: url(media/heezy.ttf);
+}
+@font-face {
+   font-family: myThirdFont;
+   src: url(media/Chomsky.otf);
+}
+@font-face {
+   font-family: NumbersFont;
+   src: url(media/CollegiateBlackFLF.ttf);
+}
+
+
+/*  HOME PAGE */
+#scroll{
+	position: fixed;
+	bottom:10px;
+	right: 50px;
+	padding: 15px;
+	border-radius: 900px;
+	outline: none;
+	z-index: 5;
+	background-color: brown;
+	color:white;
+	background-attachment: s
+
+}
+#music{
+	position: fixed;
+	bottom:10px;
+	left: 50px;
+	padding: 15px;
+	border-radius: 900px;
+	outline: none;
+	z-index: 5;
+	background-color: brown;
+	color:white;
+	transition: 3s;
+
+}
+
+#video{
+	position: relative;
+
+ }
+
+#video video{
+	height: 100vh;
+	width: 100%;
+	background-position:absolute;
+	object-fit: cover;
+	z-index:10;
+}
+
+
+#video .content {
+	background: rgb(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+#video .content h1 {
+  font-family: myFirstFont;
+   	font-size : 200px;
+
+ }
+ #video .content h3 {
+	font-family: mySecondFont;
+   	font-size : 80px;
+
+ }
+
+ #video .content a {
+ 	color:white;
+
+	border: solid white 2px ;
+	width: 30%;
+
+
+ }
+
+  #video .content a:hover {
+	background-color: rgba(209, 209, 209, 0.51);
+	color:white;
+
+
+ }
+
+
+/*	audio	*/
+audio{
+	outline: none;
+	width: 100%;
+	z-index:30;
+	position: absolute;
+	padding: 15px;
+	margin-top: 50px;
+	position: fixed;
+
+}
+#audioplayer{
+	display: none ;
+}
+#playlist{
+	width: 100%;
+	list-style: none;
+	border-radius: 20px;
+	position: absolute;
+	z-index: 30;
+	margin-top: 100px;
+	display: none;
+	position: fixed;
+	background: rgb(0,0,0,0.5);
+	box-shadow: 5px 5px 8px 5px;
+
+
+
+
+}
+#playlist li {
+ 		padding-bottom:10px;
+
+
+
+}
+#playlist li a {
+	color: #fffefe;
+	text-decoration: none;
+
+}
+#playlist li a:hover{
+	color: darkgrey;
+
+}
+#playlist .current-song a {
+	background-color:#f4f3f3 ;
+	color:black;
+
+}
+
+
+.cardd{
+
+		background: url(media/bg2.jpg) ;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		border-radius: 15px;
+		border:black solid 1px;
+
+
+
+
+
+
+}
+.cardd1{
+	background: url(media/bgnum1.jpg) !important;
+		background-repeat: no-repeat !important;
+		background-size: 100% 100% !important;
+		}
+.cardd1 h2 {
+	color:black !important;
+	text-shadow: 1px 1px 0px white , -1px -1px 0px white , 1px -1px 0px white , -1px -1px 0px white, 5px  5px 0px black !important;
+}
+.cardd1 .numberone{
+	color:#f7931e !important;
+	text-shadow: 1px 1px 0px #fbd341 , -1px -1px 0px #fbd341 , 1px -1px 0px #fbd341 , -1px -1px 0px #fbd341, 5px  5px 0px black;
+
+}
+
+.cardd2{
+	background: url(media/bgnum22.jpg) !important;
+		background-repeat: no-repeat !important;
+		background-size: 100% 100% !important;
+		}
+
+.cardd2 h2 {
+	color:black !important;
+	text-shadow: 1px 1px 0px white , -1px -1px 0px white , 1px -1px 0px white , -1px -1px 0px white, 5px  5px 0px black !important;
+}
+.cardd2 .numberone{
+	color:#f6f6f6  !important;
+	text-shadow: 1px 1px 0px #d6e0f0 , -1px -1px 0px #d6e0f0 , 1px -1px 0px #d6e0f0 , -1px -1px 0px #d6e0f0, 5px  5px 0px black !important;
+
+}
+.cardd3{
+	background: url(media/bgnum3.jpg) !important;
+		background-repeat: no-repeat !important;
+		background-size: 100% 100% !important;
+		}
+
+.cardd3 h2 {
+	color:black !important;
+	text-shadow: 1px 1px 0px white , -1px -1px 0px white , 1px -1px 0px white , -1px -1px 0px white, 5px  5px 0px black !important;
+}
+.cardd3 .numberone{
+	color:#ac4b1c  !important;
+	text-shadow: 1px 1px 0px #ffefa0 , -1px -1px 0px #ffefa0 , 1px -1px 0px #ffefa0 , -1px -1px 0px #ffefa0, 5px  5px 0px black !important;
+
+}
+
+/*			HOME CONTENT " TOP 10 "			*/
+
+.cardd h2{
+	font-size: 60px;
+	font-weight: bold;
+	font-family: mySecondFont;
+	color:white;
+	text-shadow: 1px 1px 0px red , -1px -1px 0px red , 1px -1px 0px red , -1px -1px 0px red, 5px  5px 0px black;
+	letter-spacing: px;
+
+
+}
+
+.learnmore{
+
+	color: white;
+	background-color: rgba(0, 0, 0, 0.45) ;
+	opacity: 0;
+	text-decoration: none;
+	padding-left: 120px;
+	font-size: 15px;
+
+
+}
+.learnmore a{
+
+	color: white;
+	background-color: rgba(0, 0, 0, 0.45);
+	opacity: 0;
+	text-decoration: none;
+
+
+
+}
+.numpho{
+	 box-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px white;
+
+
+}
+.cardd:hover .numpho{
+	box-shadow: 1px 1px 2px grey, 0 0 25px black, 0 0 5px white;
+
+}
+.cardd:hover .learnmore{
+	opacity: 1;
+}
+.numberone{
+	font-family: NumbersFont;
+	font-size: 60px;
+	position: absolute;
+	color: #db4908;
+	bottom:0;
+
+}
+
+.titletop{
+	font-family: NumbersFont ;
+	font-size: 70px;
+	letter-spacing: 5px;
+	color:white;
+}
+.topsection{
+		background-color: transparent;
+
+}
+.homepage{
+	background-image: url('media/raps.jpg');
+background-size: 100% 100%;
+	background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+padding-top: 150px;
+
+
+
+
+}
+.world{
+	width: 100% !important ;
+}
+
+
+
+/*news*/
+
+/* main paper */
+
+.mainpaper{
+	background: rgb(244,244,244);
+	background: radial-gradient(circle, rgba(244,244,		244,1) 0%, rgba(238,213,173,1) 100%);
+	height: auto;
+	width: 100%;
+	padding-top: 50px;
+
+
+}
+
+.newstitle{
+	font-family: myThirdFont;
+	font-size: 70px;
+	border-top:double black 6px;
+	border-bottom:double black 6px;
+	text-decoration: none;
+	color:black;
+
+}
+.newstitle:hover{
+
+	text-decoration: none;
+	color:darkorange;
+
+}
+.alertbackground .newstitle {
+		font-size: 25px !important;
+		border-top:double black 3px;
+	border-bottom:double black 3px;
+ }
+.newsname{
+	font-size: 40px;
+	font-weight: bold;
+	font-family: fantasy;
+
+ }
+ .newsdesc{
+ 	font-size: 20px;
+ 	font-family: monospace;
+ }
+ .card{
+ 		background: rgb(244,244,244);
+	background: radial-gradient(circle, rgba(244,244,244,1) 0%, rgba(238,213,173,1) 100%);
+border: none;
+outline: none;
+ }
+ .newsbody{
+ 	background-image: url('media/news.jpg');
+
+ }
+
+
+
+
+/*	dark theme button */
+.checkbox{
+	opacity: 0;
+	position: absolute;
+}
+
+
+
+.labelc{
+	background-color: #111;
+	display: flex;
+	border-radius: 13px;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	padding: 5px;
+	height: 26px;
+	width: 50px;
+}
+
+.checkbox:checked + .labelc .ball{
+	transform: translateX(25px);
+
+}
+
+
+
+.tab a{
+		font-size: 15px;
+		font-weight: bold;
+		color:white;
+}
+
+
+.ball{
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 15px;
+	left: 2px;
+	top: 2px;
+	transition: transform 0.2s linear;
+
+}
+.fa-moon{
+	color:#f1c40f;
+}
+
+.fa-sun{
+	color: #f39c12;
+}
+
+/*			NAV BAR 			*/
+.pos{
+	width: 100%;
+	position: absolute;
+}
+.navbar{
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0px 17px 19px -1px rgba(0,0,0,0.75);
+
+
+}
+.navlink {
+	color: white;
+	font-weight: bold;
+		text-shadow: 2px 2px 4px #000000;
+
+
+}
+
+.navbar li {
+
+list-style: none;
+}
+.navbar a {
+
+
+}
+
+
+.navlink:hover {
+	color:brown ;
+	border-bottom: 3px solid white;
+
+
+ }
+.dropdown:hover .dropdown-item {
+ display :block ;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/*	dropdowns content : store / tattos /studios etc.. 		*/
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+list-style: none;
+	text-align: center;
+	font-size:20px;
+	font-family: myThirdFont;
+	}
+/*	facebook ICON		*/
+
+.facebook{
+	color:white;
+	font-size: 15px;
+	background-color: transparent;
+	padding:10px;
+}
+.facebook:hover{
+background-color: rgba(0,0,255,0.49);
+	padding:10px;
+
+}
+/*	instagram ICON		*/
+
+.instagram{
+	color:white;
+	font-size: 15px;
+	background-color: transparent;
+	padding:10px;
+}
+.instagram:hover{
+	background-color: rgba(209,0,255,0.49);
+	padding:10px;
+	color:white;
+
+}
+/*	TWITTER ICON		*/
+.twitter{
+	color:white;
+	font-size: 15px;
+	background-color: transparent;
+	padding:10px;
+}
+.twitter:hover{
+	background-color: rgba(0,98,255,0.49);
+	padding:10px;
+	color:white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+.alertbackground {
+	background-image: url(media/news2.jpg);
+	background-size:cover;
+	background-attachment: ;
+	background-position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px white , -1px -1px 0px white , 1px -1px 0px white , -1px -1px 0px white!important;
+	color:red;
+
+
+}
+.breaking{
+	border: solid 1px red;
+	background-color:red;
+	padding: 4px; color:white !important;
+	text-shadow: 1px 1px 0px black , -1px -1px 0px black , 1px -1px 0px black , -1px -1px 0px black!important; font-size: 13px;
+}
+.news{
+	border: solid 1px white;
+	background-color:white; padding: 4px;
+	color:black !important;
+	text-shadow: 1px 1px 0px white , -1px -1px 0px white , 1px -1px 0px white , -1px -1px 0px white!important; font-size: 13px;
+}
+
+
+/* Store  */
+
+.storeheader{
+  font-family: mySecondFont;
+  text-shadow: 1px 1px 0px white , -1px -1px 0px white , 1px -1px 0px white , -1px -1px 0px white!important;
+  font-size: 80px;
+
+}
+
+
+/*DARK THEME */
+
+
+body.dark  .cardd{
+
+		background-blend-mode: soft-light;
+
+}
+body.dark .cardd h2{
+	color:brown;
+}

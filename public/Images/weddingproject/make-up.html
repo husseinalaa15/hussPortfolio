@@ -1,0 +1,775 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>slider</title>
+    <link rel="stylesheet" href="file/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="file/animate.css">
+    <link rel="stylesheet" href="style.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+    
+  <style>
+body{
+          margin: 0;
+          padding:0;
+          background-color:whitesmoke;
+
+      }
+@font-face{
+            font-family:wedding;
+            src:url("fonts/wedding.ttf")
+        }    
+@font-face{
+            font-family:best;
+            src:url("fonts/best.ttf")
+        }
+@font-face{
+            font-family:ball;
+            src:url("fonts/ball.ttf")
+        } 
+ /*video*/
+ section {
+  position: relative;
+  background-color: black;
+  width: 100%;
+ height:85vh;
+  overflow: hidden;
+}
+
+section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+    }
+
+section .overlay-wcs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+ background-color: rgba(0,0,0,0.5);
+}
+/* icon cards ..................................................................................... */
+.icon-container{
+              text-align: center;
+              margin-bottom:20px;
+        }
+.icon-container .icon-title{
+     color:#029585 ;
+     font-family: 'La Belle Aurore Regular';
+     margin-bottom:15px;
+     font-size:50px;
+     margin-top:40px;
+          
+      }
+.icon-container .icon-para{
+        color:darkgrey;
+        text-shadow: 1px 1px 1px #000;
+        font-size:22px;
+        margin-bottom:20px;
+      }
+.icon-card h1{
+      color:black; 
+      font-size:30px;
+      font-weight:400;
+      }      
+.icon-card{
+            background-color:whitesmoke;
+            color:black;
+            padding-top:20px;
+            padding-bottom:20px;
+            border:none;border-radius:20px;
+            margin-top:30px;
+            margin-bottom:50px;
+            
+            
+        }
+.icon-card:hover{
+            background-color:rgba(0,0,0,0.8);
+            color:white;
+
+        }
+.icon-image{
+            width:100px;
+            height:100px;
+            margin:auto;   
+        }
+.icon-p{
+           color:gray;
+          }
+     
+/*end icon cards .....................................................................................*/
+      
+      
+      
+ /*start video cards .....................................................................................*/     
+      
+.video{
+     background-color:rgba(0,0,225,0.1);
+     padding:50px;
+     text-align:left;
+      }  
+      
+.video-card{
+     background-color:rgba(0,0,0,0.0);
+     border:none;
+      }  
+.video-card h1{
+     color:#029585 ;
+     font-family: 'La Belle Aurore Regular';
+     margin-bottom:15px;
+     font-size:50px;
+     
+      } 
+.video-card p{
+     color:rgba(0,0,0,0.7);
+     margin-bottom:30px;
+      }   
+.video-card  .btn{
+  display: inline-block;
+  background-color:#029585; 
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size:22px;
+  padding:5px;
+  width: 150px;
+  border-radius:20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.video-card .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.video-card .btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.video-card .btn:hover span {
+  padding-right:20px;
+}
+
+.video-card .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
+.fa-play-circle{
+         color:#029585;font-size:80px;margin:auto; 
+      }      
+.fa-play-circle:hover{
+       color: aliceblue; 
+      } 
+/* end  */
+/* start    */
+      
+.appointment{
+        
+        text-align:center;
+       }
+.appo{ 
+        padding:40px;
+        width:100%;
+       } 
+.wform{ 
+          border:none;
+          padding-top:60px;
+          text-align:left;
+          
+      }
+.wform h1{
+         color:whitesmoke;
+         font-size:60px;
+         font-weight:400;
+          
+      }
+.wform span{
+          color:#029585;
+          font-family:fantasy;
+          font-size:80px;
+      }
+.form1{ border-top:5px solid #029585;
+        padding:10px;
+        }
+.form1 h2{
+          color:#029585;
+          padding:10px;
+      }
+.form1 input , .form1 select{
+          width:80%;
+          height:40px;
+          padding:10px;
+          margin: 5px 0 15px 0;
+          border: none;
+          background: #f1f1f1;
+      }
+.form1 input:focus , .form1 select:focus {
+        background-color: #ddd; 
+      }
+.form1 .btn ,.flip-card-back .btn{
+        background-color:#029585; 
+        color:white;
+        border: none;
+        cursor: pointer;
+        width:80%;
+        font-size:20px;
+        font-weight:bold;
+        height:50px;
+            
+}
+/*..........................................................................................*/
+.navbar{
+padding:0px 100px;
+background-color:rgba(0,0,0,0.0); 
+font-family:fantasy;
+font-size:20px;  
+      }  
+
+    </style>   
+    </head>
+
+<body>
+ 
+    
+ <!-- videoooooooooooooooooooooooo   -->  
+<section >
+  <div class="overlay-wcs"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/v1.mp4" type="video/mp4">
+  </video>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<!--  Show this only on mobile to medium screens  -->
+  <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--  Use flexbox utility classes to change how the child elements are justified  -->
+  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+    <ul class="navbar-nav nav-left" style="width:400px;padding-left:50px;">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+    
+    
+<!--   Show this only lg screens and up   -->
+    <a class="navbar-brand d-none d-lg-block" href="#">
+      <img src="images/bride-and-groom-logo.png" height="100px">
+      
+      </a>
+    
+    
+    
+    <ul class="navbar-nav nav-right" style="width:400px;padding-left:50px;">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+         
+    </ul>
+  </div>
+</nav>  
+    
+    
+    
+    <script>
+    
+    $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll >400) {
+	    $(".navbar").css("background" , "white");
+        $("a").css("color" , "#029585"); 
+        $(".nav-left").css("border-bottom" , "2px solid #029585");
+        $(".nav-left").css("border-top" , "2px solid #029585");
+        $(".nav-right").css("border-bottom" , "2px solid #029585");
+        $(".nav-right").css("border-top" , "2px solid #029585");  
+	  }
+
+	  else{
+		  $(".navbar").css("background" , "rgba(0,0,0,0.0)"); 
+          $(".nav-left").css("border-bottom" , "2px solid white");
+          $(".nav-left").css("border-top" , "2px solid white");
+          $(".nav-right").css("border-bottom" , "2px solid white");
+          $(".nav-right").css("border-top" , "2px solid white");
+	  }
+  })
+})
+    
+    
+    
+    </script>   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+</section>    
+       
+    <br>
+    <br>         
+<div class="container icon-container">
+    <h1 class="icon-title">What We Do ?</h1>
+     <p class="icon-para"><i>We are Makeup & Hairdresser Specialist for The wedding of the bride <br> and everything that has a relationship with hairdressers.</i></p>
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    <img src="images/flower.png" style="margin:10px;width:30px;">
+    <img src="images/121716.png" style="width:80px;height:15px;">
+<div class="row">
+<div class="col-md-4" data-aos="fade-up">
+<div class="card icon-card">
+     <img class="icon-image" src="images/makeup%20(2).png">
+     <h1>Make-Up</h1>
+     <p class="icon-p"><i> We are Makeup & Hairdresser Specialist <br> The wedding of the bride and everything <br> that has a relationship with hairdressers.</i></p> 
+     </div>
+</div>
+<div class="col-md-4">
+<div class="card icon-card" data-aos="fade-up">
+     <img class="icon-image" src="images/hair-dryer.png">
+     <h1>Hair-Style</h1>
+     <p class="icon-p"><i> We are Makeup & Hairdresser Specialist <br> The wedding of the bride and everything <br> that has a relationship with hairdressers.</i></p>
+     </div>
+</div>    
+<div class="col-md-4">
+<div class="card icon-card" data-aos="fade-up">
+     <img class="icon-image" src="images/nail.png">
+     <h1>Make-Up</h1>
+    <p class="icon-p"><i> We are Makeup & Hairdresser Specialist <br> The wedding of the bride and everything <br> that has a relationship with hairdressers.</i></p>
+     </div>
+</div>    
+</div>
+</div>
+    
+    
+<div class="video">    
+<div class="container">
+<div class="row">
+<div class="col-md-6" data-aos="fade-right">
+<div class="card video-card">
+     <h1>The Best Makeup Artists</h1>
+     <p>Resolution possession discovered surrounded advantages has but few add. Yet walls times spoil put. Be it reserved contempt rendered smallest. Studied to passage it mention calling believe an. <br> <br> Get ten horrible remember pleasure two vicinity. Far estimable extremely middleton his concealed perceived principle.</p> 
+     <a href="#as"><button class="btn" style="vertical-align:middle"><span> Learn More </span></button></a>
+     </div>
+</div>
+<div class="col-md-6" data-aos="fade-left">
+<div class="card" style="background-image: url(images/m8.jpg);height:100%;background-repeat: no-repeat;background-size:cover;">
+    <i class='far fa-play-circle'  data-toggle="modal" data-target="#myModal"></i>
+     </div>
+</div>    
+     
+</div>
+</div>
+</div> 
+  <!-- The Modal -->
+<div class="modal fade" id="myModal" style="background-color:rgba(0,0,0,0.7)">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="background-color:rgba(0,0,0,0.9);">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal" style="color: white;">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/iRP4DpnJ6-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+       
+        
+      </div>
+    </div>
+  </div>
+    
+ <style>
+
+.flip-card {
+    width:100%;
+    height:470px;
+    background-color: transparent;
+    perspective: 1000px;
+    margin-top:40px;
+    margin-bottom:100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+     .flip-card-inner h2{
+         color:#029585;
+         font-weight:400;
+         font-size:25px;
+         margin-top:10px;
+     }
+     
+.flip-card:hover  .flip-card-inner{
+       transform: rotateY(180deg);  
+     }          
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+ .checked {
+    color: orange;
+  }
+ .price{
+    color:#029585;
+    font-weight:bold;
+}    
+</style>
+ 
+ 
+ 
+<div class="container" id="as" style="text-align:center;margin-top:80px;">
+<p style="color:gray;font-size:20px;">We Are Passionate</p>
+<p style="font-size:28px;word-spacing:3px;"><span style="font-weight:bolder;"> OUR MAKEUP </span> ARTISTS</p> 
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    <img src="images/flower.png" style="margin:10px;width:30px;">
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    
+<div class="row">
+<div class="col-md-4" data-aos="flip-right" >    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="height:470px;background-color:white;">
+      <img  src="images/bridal_makeup_2.jpg" style="width:70%;height:200px;border-radius:50%;margin-top:15px;border:5px solid #bbb;">
+      <div class="video-card">
+      <h2>Sohaila Saeed</h2>
+          <hr>
+      <p>
+      Beauty Therapist 8 Years Experience in make-up</p>
+          <hr>
+          <span class="fa fa-star  checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> 
+          <hr>
+         <p><span class="price">£5000</span></p>
+  
+    </div>
+    </div>
+         
+    <div class="flip-card-back " style="height:470px;">
+     <img  id="myimage" src="images/m1.jpeg" style="width:100%;height:420px;" >
+ 
+        <a href="#book"><button type="button" class="btn" style="width:100%;">Booking Now</button></a>    
+    </div>
+  </div>
+</div>
+    </div>
+    
+<!--   cards ..................................................................................... -->
+   <div class="col-md-4" data-aos="flip-left">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="height:470px;background-color:white;">
+      <img  src="images/m2.jpeg" style="width:70%;height:200px;border-radius:50%;margin-top:15px;border:5px solid #bbb;">
+      <div class="video-card">
+      <h2>Sohaila Saeed</h2> 
+          <hr>
+      <p>
+      Beauty Therapist 8 Years <br> Experience in make-up</p>
+          <hr>
+          <span class="fa fa-star  checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> 
+          <hr>
+         <p><span class="price">£5000</span></p>
+  
+    </div>
+    </div>
+        
+    <div class="flip-card-back " style="height:470px;">
+     <img  id="myimage2" src="images/m17.jpg" style="width:100%;height:420px;" >
+ 
+        <a href="#book"><button type="button" class="btn" style="width:100%;">Booking Now</button></a>    
+    </div>
+  </div>
+</div>
+    </div>
+<!--    cards ...........................................................-->
+    
+    
+<div class="col-md-4" data-aos="flip-left">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="height:470px;background-color:white;">
+      <img  src="images/2016-03-mu1.jpg"  style="width:70%;height:200px;border-radius:50%;margin-top:15px;border:5px solid #bbb;">
+      <div class="video-card">
+      <h2>Sohaila Saeed</h2>
+          <hr>
+      <p>
+      Beauty Therapist 8 Years <br> Experience in make-up</p>
+          <hr>
+          <span class="fa fa-star  checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> 
+          <hr>
+         <p><span class="price">£5000</span></p>
+  
+    </div>
+    </div>
+       <div class="flip-card-back " style="height:470px;">
+     <img  id="myimage" src="images/m1.jpeg" style="width:100%;height:420px;" >
+ 
+        <a href="#book"><button type="button" class="btn" style="width:100%;">Booking Now</button></a>    
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+   </div>
+<div class="container" id="as" style="text-align:center;margin-top:80px;">
+<p style="color:gray;font-size:20px;">We Are Passionate</p>
+<p style="font-size:28px;word-spacing:3px;"><span style="font-weight:bolder;"> OUR  HAIR-STYLE </span> ARTISTS</p> 
+    <img src="images/121716.png" style="width:80px;height:15px;">
+    <img src="images/flower.png" style="margin:10px;width:30px;">
+    <img src="images/121716.png" style="width:80px;height:15px;">
+<div class="row">
+<div class="col-md-4" data-aos="flip-left">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="height:470px;background-color:white;">
+      <img  src="images/bridal_makeup_2.jpg" style="width:70%;height:200px;border-radius:50%;margin-top:15px;border:5px solid #bbb;">
+      <div class="video-card">
+      <h2>Sohaila Saeed</h2>
+          <hr>
+      <p>
+      Beauty Therapist 8 Years <br> Experience in make-up</p>
+          <hr>
+          <span class="fa fa-star  checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> 
+          <hr>
+         <p><span class="price">£5000</span></p>
+  
+    </div>
+    </div>
+         
+    <div class="flip-card-back " style="height:470px;">
+     <img  id="myimage" src="images/m1.jpeg" style="width:100%;height:420px;" >
+ 
+        <a href="#book"><button type="button" class="btn" style="width:100%;">Booking Now</button></a>    
+    </div>
+  </div>
+</div>
+    </div>
+    
+<!--   cards ..................................................................................... -->
+   <div class="col-md-4" data-aos="flip-left">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="height:470px;background-color:white;">
+      <img  src="images/m2.jpeg" style="width:70%;height:200px;border-radius:50%;margin-top:15px;border:5px solid #bbb;">
+      <div class="video-card">
+      <h2>Sohaila Saeed</h2>
+          <hr>
+      <p>
+      Beauty Therapist 8 Years <br> Experience in make-up</p>
+          <hr>
+          <span class="fa fa-star  checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> 
+          <hr>
+         <p><span class="price">£5000</span></p>
+  
+    </div>
+    </div>
+        
+    <div class="flip-card-back " style="height:470px;">
+     <img  id="myimage2" src="images/m17.jpg" style="width:100%;height:420px;" >
+ 
+        <a href="#book"><button type="button" class="btn" style="width:100%;">Booking Now</button></a>    
+    </div>
+  </div>
+</div>
+    </div>
+<!--    cards ...........................................................-->
+    
+    
+   <div class="col-md-4" data-aos="flip-left">    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="height:470px;background-color:white;">
+      <img  src="images/2016-03-mu1.jpg"  style="width:70%;height:200px;border-radius:50%;margin-top:15px;border:5px solid #bbb;">
+      <div class="video-card">
+      <h2>Sohaila Saeed</h2>
+          <hr>
+      <p>
+      Beauty Therapist 8 Years <br> Experience in make-up</p>
+          <hr>
+          <span class="far fa-star  checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> 
+          <hr>
+         <p><span class="price">£5000</span></p>
+  
+    </div>
+    </div>
+       <div class="flip-card-back " style="height:470px;">
+     <img  id="myimage" src="images/m1.jpeg" style="width:100%;height:420px;" >
+ 
+        <a href="#book"><button type="button" class="btn" style="width:100%;">Booking Now</button></a>    
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+   </div>
+ 
+    
+    
+    
+    
+    
+<script>
+   setInterval(ChangePic, 1000);
+
+        var counter = 0;
+        function ChangePic() {
+
+            var image = document.getElementById("myimage");
+            var source = ["images/m1.jpeg" , "images/m15.jpg" , "images/m14.jpg"];
+            image.src = source[counter++];
+            if (counter == source.length) {
+                counter = 0;
+            }
+
+        } 
+   setInterval(ChangePic2, 1000);
+
+        var counter = 0;
+        function ChangePic2() {
+
+            var image = document.getElementById("myimage2");
+            var source = ["images/m17.jpg" , "images/m13.jpg" , "images/m18.jpg"];
+            image.src = source[counter++];
+            if (counter == source.length) {
+                counter = 0;
+            }
+
+        }   
+      setInterval(ChangePic3, 1000);
+
+        var counter = 0;
+        function ChangePic3() {
+
+            var image = document.getElementById("myimage3");
+            var source = ["images/m17.jpg" , "images/m13.jpg" , "images/m18.jpg"];
+            image.src = source[counter++];
+            if (counter == source.length) {
+                counter = 0;
+            }
+
+        } 
+</script>
+ 
+    
+ 
+    
+    
+    
+    
+  
+ 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+  AOS.init();
+</script>
+    
+    </body>
+</html>
+
+
+ 
+
+
+ 
