@@ -18,7 +18,7 @@ const Nav = () => {
     <nav className="navbar  navbar-expand-md  fixed-top ">
     
     <div className="container">
-        <div  className="logo">  <img  src="/images/hussein.png" alt="logo" className="rounded-circle"  /></div>
+        <div  className="logo">  <img  src="Images/hussein.png" alt="logo" className="rounded-circle"  /></div>
 
         <button className="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
             <FaBars className="text-white " /> 

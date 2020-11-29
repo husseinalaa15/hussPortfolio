@@ -53,7 +53,7 @@ const Banner = () => {
                             <div className="header__buttons">
                                 <a data-aos="fade-up" id="scroll-Dwn-btn" className="btn mt-3  btn-outline">My Portofolio</a>
                                 &nbsp;&nbsp;&nbsp;
-                                <a  data-aos="fade-up" href="/download/cv.pdf" className="btn mt-3 btn-smart" download>Download CV.</a>
+                                <a  data-aos="fade-up" href="download/cv.pdf" className="btn mt-3 btn-smart" download>Download CV.</a>
 
                             </div>
                          </div>

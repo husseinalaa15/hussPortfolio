@@ -16,13 +16,13 @@ const Work = () => {
     const [work] = React.useState([
         {
             id: 1,
-            skill:"/Images/skills1.png " ,  
-            image:"/Images/projectimgs/shop-basketball.png"  , 
+            skill:"Images/skills1.png " ,  
+            image:"Images/projectimgs/shop-basketball.png"  , 
             // download:"/download/Al-Nady-GP.rar",
             desc: " Dynamic webapp - A+",
             title:"El-Nady",
             
-            iframe:"/Images/GP2/korahome.html"
+            iframe:"Images/GP2/korahome.html"
 
 
 
@@ -30,14 +30,14 @@ const Work = () => {
 
         {
             id: 2,
-            skill:"/Images/skill3.png " ,  
-            image:"/Images/projectimgs/hotel-page.jpeg"  , 
+            skill:"Images/skill3.png " ,  
+            image:"Images/projectimgs/hotel-page.jpeg"  , 
             download:"/download/wedding.rar",
             desc: " Dynamic webapp - 'A+'  ",
             grad:"Graduation Project",
             title:"Bride & Groom",
             
-            iframe:"/Images/weddingproject/home.html"
+            iframe:"Images/weddingproject/home.html"
 
 
 
@@ -45,48 +45,48 @@ const Work = () => {
 
         {
             id: 3,
-            skill:"/Images/skills1.png " ,  
-            image:"/Images/projectimgs/homee.png"  , 
+            skill:"Images/skills1.png " ,  
+            image:"Images/projectimgs/homee.png"  , 
             download:"/download/hiphop.rar",
             desc: " unfinished Project  ",
             grad: "unfinished",
             title: "Heezy",
-            iframe:"/Images/rap/home.html"
+            iframe:"Images/rap/home.html"
 
         },  
 
         {
             id: 4,
-            skill:"/Images/skills1.png " ,  
-            image:"/Images/projectimgs/homepage.png"  , 
+            skill:"Images/skills1.png " ,  
+            image:"Images/projectimgs/homepage.png"  , 
             download:"/download/asnan.rar",
             desc: "   Practicing     ",
             title:"Asnan",
 
-            iframe:"/Images/asnan/home.html"
+            iframe:"Images/asnan/home.html"
 
         },
         {
             id: 5,
-            skill:"/Images/skills2.png " ,  
-            image:"/Images/projectimgs/products.png"  , 
+            skill:"Images/skills2.png " ,  
+            image:"Images/projectimgs/products.png"  , 
             download:"/download/Gym.rar",
             desc: " Practicing ",
             title:"Gym",
 
-            iframe:    "/Images/pr/home.html"
+            iframe:    "Images/pr/home.html"
 
         },
 
         {
             id: 6,
-            skill:"/Images/skills2.png " ,  
-            image:"/Images/projectimgs/home.png"  , 
+            skill:"Images/skills2.png " ,  
+            image:"Images/projectimgs/home.png"  , 
             download:"/download/watchesclub.rar",
             
             desc: " Practicing ",
             title:"Watches Club",
-            iframe:" /images/TEST/logiin.html"
+            iframe:" Images/TEST/logiin.html"
         }
 
         

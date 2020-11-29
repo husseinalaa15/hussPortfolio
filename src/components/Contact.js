@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="row justifyConter">
             <div className="col-lg-12">
               <div className="contactSection-logo">
-                <img src="/images/hussein.png" alt="" />
+                <img src="Images/hussein.png" alt="" />
               </div>
               <p className="col-lg-12 text-center">
               <strong className="thanku text-center text-white">Thank You</strong> <br/>
