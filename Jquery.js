@@ -50,7 +50,9 @@ var typed = new Typed(".typing",{
 
 });
 
-
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow")
+});
 
 
 
