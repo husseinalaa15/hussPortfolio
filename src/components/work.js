@@ -21,7 +21,8 @@ const Work = () => {
             // download:"/download/Al-Nady-GP.rar",
             desc: " Dynamic webapp - A+",
             title:"El-Nady",
-            
+            grad:"Graduation Project",
+
             iframe:"Images/GP2/korahome.html"
 
 
