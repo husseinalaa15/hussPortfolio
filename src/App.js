@@ -7,7 +7,6 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Work from "./components/work";
-import Load from "./components/Load";
 
 import Scroll from "./components/Scroll";
 import {Button , Modal } from 'react-bootstrap';
