@@ -27,7 +27,7 @@ const About = () => {
                 <div className="container">
                     <div className="row">
                     <div data-aos="flip-left" className="col-lg-6 col-md-6 about__img">
-                            <img src ="Images/hussein1.jpg" alt="me" />
+                            <img src ="Images/hussein.jpg" alt="me" />
                     </div>
                     <div data-aos="flip-right" className="col-lg-6 col-md-6 about__info mt-5">
                             <h1>Hi There</h1>
